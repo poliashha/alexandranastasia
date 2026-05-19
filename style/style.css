@@ -459,7 +459,7 @@
   opacity: 0;
   overflow: hidden;
   transition:
-    max-height 0.4s ease-out,
+    max-height 0.8s ease-out,
     opacity 0.3s ease-out,
     margin 0.3s ease-out;
   margin-top: 0;
@@ -497,10 +497,10 @@ text-align: center;
 .promting-button::after {
   content: "";
   position: absolute;
-  top: 9px;
+  top: 8px;
   left: 15px;
   width: 1.5px;
-  height: 15px;
+  height: 16px;
   border-radius: 32px;
   background-color: var(--background-color);
 }
@@ -509,8 +509,8 @@ text-align: center;
   content: "";
   position: absolute;
   top: 15px;
-  left: 9px;
-  width: 15px;
+  left: 8px;
+  width: 16px;
   height: 1.5px;
   border-radius: 32px;
   background-color: var(--background-color);
@@ -535,3 +535,32 @@ text-align: center;
 .footer-promting{
   padding-bottom: 40px;
 }
+
+ .promting-button.active {
+    background-color: #95BCEA; /* Цвет для крестика - можно поменять */
+  }
+  
+  .promting-button.active::after {
+    transform: rotate(45deg);
+    top: 8px;
+    left: 15px;
+    height: 16px;
+  }
+  
+  .promting-button.active::before {
+    transform: rotate(45deg);
+    top: 15px;
+    left: 8px;
+    width: 16px;
+  }
+  
+  /* Плавные переходы для линий */
+  .promting-button::after,
+  .promting-button::before {
+    transition: all 0.5s ease;
+  }
+  
+  /* Общий контейнер тоже меняем при открытии (опционально) */
+  .promting.open {
+    border-radius: 12px 12px 0 0;
+  }

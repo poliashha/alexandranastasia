@@ -147,7 +147,7 @@ function startCountdown(targetDate) {
   setInterval(updateTimer, 1000);
 }
 
-const newYear = new Date(2026, 6, 23, 16, 0, 0).getTime();
+const newYear = new Date(2026, 7, 28, 15, 0, 0).getTime();
 startCountdown(newYear);
 
 // Находим ВСЕ кнопки

@@ -1,0 +1,537 @@
+.header {
+  max-width: 412px;
+  width: 100%;
+  margin: auto;
+  color: var(--color-text);
+  position: relative;
+}
+
+.first {
+  aspect-ratio: 412/633;
+  max-width: 412px;
+  width: 100%;
+}
+
+.title-kursiv {
+  font-family: var(--title-font);
+  text-align: center;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 61%;
+}
+
+.text {
+  font-family: var(--main-font);
+  font-size: 20px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.gray {
+  color: #545454;
+}
+
+.date-header {
+  font-size: 32px;
+}
+
+.top-text {
+  padding-top: 24px;
+}
+
+.botton-text {
+  padding-top: 5px;
+}
+
+.box-header {
+  position: absolute;
+  top: 180px;
+  left: 87px;
+}
+
+
+.main {
+  color: var(--color-text);
+  margin-top: 27px;
+  max-width: 412px;
+  width: 100%;
+  margin: auto;
+}
+
+.kursiv {
+  font-family: var(--kursiv-text);
+  font-weight: 400;
+  text-align: center;
+  font-size: 64px;
+}
+
+.dear {
+  background-image: url(../img/flowerfon.jpg);
+  aspect-ratio: 412/878;
+  object-fit: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+  padding: 0 50px;
+}
+
+.dear-top {
+  padding-top: 73px;
+  font-size: 53px;
+}
+
+.gap {
+  margin-top: 80px;
+}
+
+.location-text {
+  font-size: 24px;
+  line-height: 163%;
+  margin-top: -20px;
+}
+
+.map-button {
+  background-image: url(../img/button.png);
+  height: 27px;
+  width: 191px;
+  border: 1px solid var(--color-text);
+  background-color: transparent;
+}
+
+.href {
+  text-decoration: none;
+  font-family: var(--main-font);
+  font-size: 20px;
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 19px;
+}
+
+.dresscode {
+  background-image: url(../img/fondress.png);
+  aspect-ratio: 412/428;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 21px;
+  padding: 0 50px;
+}
+
+.dress-text {
+  padding-top: 55px;
+  margin-bottom: -20px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.input {
+  padding-top: 5px;
+  background-color: transparent;
+  border-top: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid var(--color-text);
+  width: 296px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.input:focus {
+  border: 1px solid var(--color-text);
+  outline-offset: 0;
+}
+
+::placeholder {
+  color: var(--color-text);
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  height: auto;
+  transition: height 0.3s ease;
+  font-family: var(--main-font);
+  max-width: 304px;
+  margin-top: -20px;
+}
+
+.radio {
+  display: flex;
+  flex-direction: column;
+  outline: none;
+  border: none;
+  padding: 0;
+}
+
+.custom-radio input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.radio-circle {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  border: 1px solid var(--color-text);
+  border-radius: 50%;
+  background: transparent;
+  transition: all 0.15s;
+  position: relative;
+}
+
+.custom-radio:hover .radio-circle {
+  border-color: var(--color-text);
+}
+
+.custom-radio input[type="radio"]:checked + .radio-circle {
+  border-color: var(--color-text);
+  background: var(--color-text);
+}
+
+.radio-text {
+  text-align: left;
+}
+
+.allergy-field {
+  max-height: 0;
+  display: none;
+  animation: show 0.5s ease;
+}
+
+.allergy-field.show {
+  max-height: 100px;
+  display: block;
+}
+
+.cauple-field {
+  max-height: 0;
+  display: none;
+  animation: show 0.5s ease;
+}
+
+.cauple-field.show {
+  max-height: 100px;
+  display: block;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.checkbox__input {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-text);
+  background-color: transparent;
+  width: 14px;
+  height: 14px;
+  outline: none;
+}
+
+.checkbox__input:checked::after {
+  content: "✓";
+  font-size: 12px;
+}
+
+.button {
+  background-color: transparent;
+  border: 1px solid var(--color-text);
+  border-radius: 0;
+  width: 295px;
+  height: 30px;
+  color: inherit;
+  transition: all 0.3s ease;
+  font-size: 20px;
+}
+
+.button.touch-pressed {
+  background-color: #30416149;
+  color: var(--hot-pink-color);
+}
+
+@media (hover: hover) {
+  .button:hover {
+    background-color: #30416149;
+    color: var(--hot-pink-color);
+  }
+}
+
+.footer-text {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--hot-pink-color);
+}
+
+.form-send {
+  text-align: center;
+}
+
+.error-text {
+  display: none;
+}
+
+.error-text.show {
+  display: block;
+  animation: show 0.3s ease;
+}
+
+.radio-error {
+  display: none;
+}
+
+.radio-error.show {
+  display: block;
+  animation: show 0.3s ease;
+}
+
+.allergy-error {
+  display: none;
+}
+
+.allergy-error.show {
+  display: block;
+  animation: show 0.5s ease;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.varints-text {
+  padding-bottom: 5px;
+}
+
+.varints {
+  font-size: 15px;
+}
+
+.custom-radio {
+  font-size: 20px;
+}
+
+.checkbox {
+  font-size: 20px;
+}
+
+.error-icon {
+  font-size: 16px;
+}
+
+.time {
+  background-image: url(../img/timer.jpg);
+  max-width: 412px;
+  width: 100%;
+  height: 405px;
+  aspect-ratio: 412 / 405;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
+
+  color: var(--background-color);
+}
+
+.tetx-timer {
+  padding-top: 203px;
+}
+
+.text-input {
+  font-size: 18px;
+}
+
+.timer-text {
+  font-size: clamp(3.4375rem, calc(-0.4573rem + 17.31vw), 4rem);
+  text-align: center;
+  font-family: var(--timer-font);
+  position: relative;
+  width: 57px;
+}
+
+.colon {
+  width: 12px;
+}
+
+.timer {
+  margin-top: -30px;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer-text_small {
+  font-size: 15px;
+}
+.days::after {
+  content: "дней";
+  position: absolute;
+  top: 72px;
+  right: 12px;
+  font-size: 18px;
+  font-family: var(--main-font);
+  font-weight: 400;
+}
+
+.hours::after {
+  content: "часов";
+  position: absolute;
+  top: 72px;
+  right: 10px;
+  font-size: 18px;
+  font-family: var(--main-font);
+  font-weight: 400;
+}
+
+.minutes::after {
+  content: "минут";
+  position: absolute;
+  top: 72px;
+  right: 10px;
+  font-size: 18px;
+  font-family: var(--main-font);
+  font-weight: 400;
+}
+
+.seconds::after {
+  content: "секунд";
+  position: absolute;
+  top: 72px;
+  left: 4px;
+  font-size: 18px;
+  font-family: var(--main-font);
+  font-weight: 400;
+}
+
+.promting-button {
+  width: 32px;
+  height: 32px;
+  background-color: var(--color-text);
+  border-radius: 50%;
+  position: relative;
+  border: none;
+}
+
+.visually-hidden-promting {
+  display: block;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition:
+    max-height 0.4s ease-out,
+    opacity 0.3s ease-out,
+    margin 0.3s ease-out;
+  margin-top: 0;
+  padding: 0 22px 0 22px;
+}
+
+.visually-hidden-promting.open {
+  max-height: 300px; /* Достаточно большое значение для вашего контента */
+  opacity: 1;
+  padding-bottom: 25px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+gap: 10px;
+}
+
+.href{
+  text-decoration: none;
+text-align: center;
+}
+
+.promting {
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.34);
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10px 15px 22px;
+}
+
+.promting-button::after {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 15px;
+  width: 1.5px;
+  height: 15px;
+  border-radius: 32px;
+  background-color: var(--background-color);
+}
+
+.promting-button::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 9px;
+  width: 15px;
+  height: 1.5px;
+  border-radius: 32px;
+  background-color: var(--background-color);
+}
+
+.header-num {
+  font-family: "Bellefair";
+}
+
+.pluse{
+  font-size: 30px
+}
+
+.tel{
+  margin-top: -12px;
+}
+
+.footer{
+  padding-bottom: 40px;
+}
+
+.footer-promting{
+  padding-bottom: 40px;
+}

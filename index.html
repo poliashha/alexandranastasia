@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Приглашение на свадьбу | 28.08.2026" />
+    <meta property="og:image" content="./img/icon.jpg" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="400" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta name="color-scheme" content="light" />
+    <title>Приглашение на свадьбу</title>
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="style/global.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/variabels.css" />
+    <link rel="icon" href="img/icon.svg" sizes="any" />
+    <link rel="icon" href="img/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  </head>
+  <body>
+    <header class="header">
+      <img class="first" src="./img/first.png" alt="" />
+      <div class="box-header">
+        <h1 class="title-kursiv">
+          Александр<br />
+          &<br />
+          Анастасия
+        </h1>
+        <p class="text gray top-text">приглашаем на свадьбу</p>
+        <p class="text date-header">
+          <span class="header-num">28</span> августа
+        </p>
+        <p class="text gray botton-text">
+          будем рады разделить этот<br />
+          день с вами
+        </p>
+      </div>
+    </header>
+    <main class="main">
+      <article class="dear">
+        <h1 class="kursiv dear-top">Дорогой гость!</h1>
+        <p class="text">
+          Судьба свела нас и мы поняли, что идти дальше - только вместе. Мы
+          верим и надеемся, что этот день станет красивым началом долгой и
+          счастливой жизни. Позвольте пригласить Вас разделить с нами радость
+          этого дня. Подарите свои поддержу и добрые пожелания, а мы в свою
+          очередь поделимся частичкой нашего счастья.
+        </p>
+        <img src="./img/dearfoto.jpg" alt="" />
+      </article>
+      <article class="timing">
+        <object
+          class="heart"
+          type="image/svg+xml"
+          data="./img/timing.svg"
+          width="412"
+          height="950"
+        ></object>
+      </article>
+      <article class="location gap">
+        <h1 class="kursiv">Локация</h1>
+        <p class="text location-text">
+          Ресторан «Грузинские Легенды»<br />
+          Г. Сызрань,<br />
+          ул. Интернациональная, д. 7
+        </p>
+        <button class="map-button">
+          <a
+            class="href"
+            href="https://yandex.ru/maps/-/CPsGuXzT"
+            target="_blank"
+            >посмотреть на карте</a
+          >
+        </button>
+        <object
+          class="heart"
+          type="image/svg+xml"
+          data="./img/hotel.svg"
+          width="346"
+          height="145"
+        ></object>
+      </article>
+      <article class="dresscode">
+        <h1 class="kursiv dress-text">Дреесс-код</h1>
+        <p class="text">
+          Соблюдать цветовую палитру необязательно, но мы будем очень
+          признательны, если вы поддержите нашу идею и выберете наряды в палитре
+          торжества.
+        </p>
+        <object
+          class="heart"
+          type="image/svg+xml"
+          data="./img/dresscode.svg"
+          width="195"
+          height="78"
+        ></object>
+      </article>
+      <article class="gap form">
+        <div>
+        <h2 class="kursiv">Анкета</h2>
+       
+        </div>
+        <form  class="form-box" name="submit-to-google-sheet" id="form" action="#">
+          <label class="input_box">
+          <input
+            class="input"
+            name="name"
+            id="name"
+            type="text"
+            placeholder="Имя Фамилия" required
+          />
+          <span class="error-text" id="error-text">Пожалуйста, заполните поле</span>
+        </label>
+          <fieldset class="radio" >
+            <h2 class="text wishes-text radio-text">
+              Сможете ли вы присутствовать?
+            </h2>
+            <label class="custom-radio">
+              <input type="radio" name="presence" value="да" id="presenceYes" required/>
+              <span class="radio-circle"></span>
+              <span>Да</span>
+            </label>
+            <label class="custom-radio">
+              <input type="radio" name="presence" value="нет" id="presenceNo" />
+              <span class="radio-circle"></span>
+              <span>Нет</span>
+            </label>
+            
+            <div class="radio-error" id="presenceError">
+          
+          Пожалуйста, выберите, один из вариантов
+        </div>
+      </fieldset>
+          </fieldset>
+
+          
+          <fieldset class="radio" id="caupleFieldset">
+            <h2 class="text wishes-text radio-text">
+             Вы будете один или с парой?
+            </h2>
+            <label class="custom-radio">
+              <input type="radio" name="cauple" value="один" id="caupleNo" />
+              <span class="radio-circle"></span>
+              <span>Один</span>
+            </label>
+            <label class="custom-radio">
+              <input type="radio" name="cauple" value="с парой" id="caupleYes"/>
+              <span class="radio-circle"></span>
+              <span>С парой</span>
+            </label>
+             
+          </fieldset>
+
+          <div class="cauple-field" id="caupleDetails">
+            <label for="caupleInput" class="visually-hidden"
+              >Имя фамилия пары</label
+            >
+            <input
+              class="input"
+              type="text"
+              id="caupleInput"
+              placeholder="Имя фамилия пары"
+              name="listcauple"
+            />
+            
+          </div><fieldset class="radio" id="presenceFieldset">
+            <h2 class="text wishes-text radio-text">
+              Есть ли у вас пищевая аллергия?
+            </h2>
+            <label class="custom-radio">
+              <input type="radio" name="allergy" value="нет" id="allergyNo" />
+              <span class="radio-circle"></span>
+              <span>Нет</span>
+            </label>
+            <label class="custom-radio">
+              <input type="radio" name="allergy" value="да" id="allergyYes"/>
+              <span class="radio-circle"></span>
+              <span>Да</span>
+            </label>
+             <div class="allergy-error" id="allergyError">
+          
+          Пожалуйста, выберите, один из вариантов
+        </div>
+          </fieldset>
+
+          <div class="allergy-field" id="allergyDetails">
+            <label for="allergyInput" class="visually-hidden"
+              >Укажите, на что аллергия</label
+            >
+            <input
+              class="input"
+              type="text"
+              id="allergyInput"
+              placeholder="Укажите, на что аллергия"
+              name="listallergy"
+            />
+            
+          </div>
+<fieldset class="radio">
+  <h2 class="text wishes-text radio-text varints-text">
+             Что предпочитаете из напитков?
+            </h2>
+            <p class="varints">Можно выбрать несколько вариантов</p>
+          <label class="checkbox">
+          <input
+            name="drinks"
+            id="whitewine"
+            type="checkbox"
+            class="checkbox__input"
+            value="белое вино"/>
+            <span class="dicorete-checkbox"></span>
+            <span>Белое вино</span>
+          </label>
+           <label class="checkbox">
+          <input
+            name="drinks"
+            id="whitewine"
+            type="checkbox"
+            class="checkbox__input"
+            value="красное вино"/>
+            <span class="dicorete-checkbox"></span>
+            <span>Красное вино</span>
+          </label>
+           <label class="checkbox">
+          <input
+            name="drinks"
+            id="whitewine"
+            type="checkbox"
+            class="checkbox__input"
+            value="шампанское"/>
+            <span class="dicorete-checkbox"></span>
+            <span>Шампанское</span>
+          </label>
+          <label class="checkbox">
+          <input
+            name="drinks"
+            id="whitewine"
+            type="checkbox"
+            class="checkbox__input"
+            value="коньяк"/>
+            <span class="dicorete-checkbox"></span>
+            <span>Коньяк</span>
+          </label>
+           <label class="checkbox">
+          <input
+            name="drinks"
+            id="whitewine"
+            type="checkbox"
+            class="checkbox__input"
+            value="виски"/>
+            <span class="dicorete-checkbox"></span>
+            <span>Виски</span>
+          </label>
+           <label class="checkbox">
+          <input
+            name="drinks"
+            id="whitewine"
+            type="checkbox"
+            class="checkbox__input"
+            value="водка"/>
+            <span class="dicorete-checkbox"></span>
+            <span>Водка</span>
+          </label>
+           <label class="checkbox">
+          <input
+            name="drinks"
+            id="whitewine"
+            type="checkbox"
+            class="checkbox__input"
+            value="безалкогольные напитки"/>
+            <span class="dicorete-checkbox"></span>
+            <span>Безалкогольные напитки</span>
+          </label>
+          </fieldset>
+          <button class="map-button button" type="submit">отправить</button>
+          <div class="form-send"></div>
+        </form>
+      </article>
+       <article class="time gap">
+        
+          <h5 class="kursiv tetx-timer">До встречи через:</h5>
+          <object
+            class="image-anketa"
+            type="image/svg+xml"
+            data="./img/textankta.svg"
+            width="412"
+            height="83"
+          ></object>
+          <div class="timer" id="timer">
+            <span class="timer-box">
+              <p class="timer-text days" id="days"></p>
+            </span>
+            <span class="end-flex">
+              <p class="timer-text colon">:</p>
+            </span>
+            <span>
+              <p class="timer-text hours" id="hours"></p>
+            </span>
+            <span class="end-flex">
+              <p class="timer-text colon">:</p>
+            </span>
+            <span>
+              <p class="timer-text minutes" id="minutes"></p>
+            </span>
+            <span class="end-flex">
+              <p class="timer-text colon">:</p>
+            </span>
+            <span>
+              <p class="timer-text seconds" id="seconds"></p>
+            </span>
+          </div>
+      </article>
+      <footer class="footer gap">
+         <h2 class="kursiv footer-promting">Подсказки</h2>
+         <div class="promting">
+          <div class="box">
+        <p class="text">Чат</p>
+        
+        <button class="promting-button"></button></div>
+        <div class="visually-hidden-promting">
+  
+    <p class="text">
+      Ссылка на чат в Телеграме.<br/> Знакомьтесь, общайтесь, скидывайте фото и задавайте вопросы.
+    </p>
+    <a href="https://t.me/+BkLQpnuRtsc1OTYy" target="_blank" class="href map-button">
+      Вступить
+    </a>
+<p class="text">Контакт невесты</p>
+<a class="href header-num tel" href="tel:+79966698518"><span class="pluse text">+</span>79966698518</a>
+<p class="text">Контакт жениха</p>
+<a  class="href header-num tel" href="tel:+79998305228"><span class="pluse text">+</span>79998305228</a>
+</div>
+      </div>
+         <div class="promting">
+          <div class="box">
+        <p class="text">Дети</p>
+        
+        <button class="promting-button"></button></div>
+        <div class="visually-hidden-promting">
+  
+    <p class="text">
+      Мы с нетерпением ждем Вас, но убедительно просим оставить детей дома. Детской программы и меню не предусмотрено. 
+    </p>
+</div>
+         <div class="promting">
+          <div class="box">
+        <p class="text">Подарки</p>
+        
+        <button class="promting-button"></button></div>
+        <div class="visually-hidden-promting">
+  
+    <p class="text">
+      Мы планируем свадебное путешествие сразу после торжества, поэтому лучший подарок для нас – в конверте. 
+    </p>
+</div>
+      </div>
+         <div class="promting">
+          <div class="box">
+        <p class="text">Цветы</p>
+        
+        <button class="promting-button"></button></div>
+        <div class="visually-hidden-promting">
+  
+    <p class="text">
+      Из-за свадебного путешествия мы не сможем в полной мере насладиться подаренным букетом и ухаживать за ним, поэтому просим воздержаться от цветов и подарить что-то иное, например, съедобный букет или конфеты. 
+    </p>
+</div>
+      </div>
+         <div class="promting">
+          <div class="box">
+        <p class="text">Контакт ведущего</p>
+        
+        <button class="promting-button"></button></div>
+        <div class="visually-hidden-promting">
+  
+    <p class="text">
+       Если Вы хотите устроить нам сюрприз, то, пожалуйста, согласуйте это с нашим ведущим Николаем.
+</p>
+<a  class="href header-num tel" href="tel:+79879822924"><span class="pluse text">+</span>79879822924</a>
+    
+</div>
+      </div>
+      </div>
+         <div class="promting">
+          <div class="box">
+        <p class="text">Размещение</p>
+        
+        <button class="promting-button"></button></div>
+        <div class="visually-hidden-promting">
+  
+    <p class="text">
+       Мы арендовали домики на туристической базе «Медик» с 27 августа по 30 августа, чтобы вы могли разместиться до свадьбы и остаться после. Будет трансфер до ресторана и обратно в день свадьбы. 
+</p>    
+</div>
+      </div>
+         <div class="promting">
+          <div class="box">
+        <p class="text">Как добраться до города?</p>
+        
+        <button class="promting-button"></button></div>
+        <div class="visually-hidden-promting">
+  
+    <p class="text">
+       До г. Сызрань можно добраться с помощью поезда до ж/д вокзала «Сызрань-1» и через аэропорт в г. Ульяновск. Мы вас везде встретим.
+</p>    
+</div>
+      </div>
+      </footer>
+      <script src="script.js"></script>
+    </main>
+  </body>
+</html>

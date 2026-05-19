@@ -150,6 +150,7 @@
   width: 296px;
   outline: none;
   transition: border-color 0.2s ease;
+  border-radius: 0;
 }
 
 .input:focus {

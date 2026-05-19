@@ -408,7 +408,7 @@
   content: "дней";
   position: absolute;
   top: 72px;
-  right: 12px;
+  right: 11px;
   font-size: 18px;
   font-family: var(--main-font);
   font-weight: 400;
@@ -459,8 +459,8 @@
   opacity: 0;
   overflow: hidden;
   transition:
-    max-height 0.7s ease-out 0.2s,
-    opacity 0.5s ease-out,
+    max-height 0.7s ease-out,
+    opacity 0.3s ease-out,
     margin 0.3s ease-out;
   margin-top: 0;
   padding: 0 22px 0 22px;

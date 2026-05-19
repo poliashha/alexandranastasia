@@ -408,11 +408,15 @@
 .timer-text_small {
   font-size: 15px;
 }
+
+.days{
+  width: 85px;
+}
 .days::after {
   content: "дней";
   position: absolute;
   top: 72px;
-  right: 9px;
+  right: 19px;
   font-size: 18px;
   font-family: var(--main-font);
   font-weight: 400;

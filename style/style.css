@@ -409,14 +409,12 @@
   font-size: 15px;
 }
 
-.days{
-  width: 85px;
-}
+
 .days::after {
   content: "дней";
   position: absolute;
   top: 72px;
-  right: 19px;
+  right: 12px;
   font-size: 18px;
   font-family: var(--main-font);
   font-weight: 400;
